@@ -1,8 +1,8 @@
 <template>
   <v-content id="error">
-    <v-row no-gutters justify="center">
+    <v-row no-gutters justify="center" align="center" style="height: 100%">
       <v-col cols="10">
-        <v-card outlined>
+        <v-card flat>
           <v-row no-gutters style="height:100%" align="center" justify="center">
             <v-col cols="5">
               <v-img src="@/assets/Failure.jpg" style="width: 100vh"></v-img>

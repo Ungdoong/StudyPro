@@ -1,6 +1,6 @@
 <template>
   <div id="header">
-    <v-app-bar prominent flat height="56px">
+    <v-app-bar prominent height="56px" color="white">
       <v-row id="header-container">
         <!-- 로고 -->
         <v-col class="header-logo-container" cols="4" sm="3" md="2">
