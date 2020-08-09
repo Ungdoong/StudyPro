@@ -143,7 +143,7 @@ export default {
     var list = await StudyService.getAllStudy();
     var len = list.length < 8 ? list.length : 8;
     for (var i = 0; i < len; i++) {
-      this.studyList.push(list.shift());
+      this.studyList.push(list[i]);
       this.studyList[i].order = i;
     }
   },
