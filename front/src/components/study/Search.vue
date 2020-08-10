@@ -479,7 +479,7 @@ export default {
       this.displayItems = [];
       let len = this.copyItems.length < 10 ? this.copyItems.length : 10;
       for (var i = 0; i < len; i++) {
-        this.displayItems.push(this.copyItems[i]);
+        this.displayItems.push(this.copyItems.shift());
       }
     },
 
@@ -488,7 +488,7 @@ export default {
       let len = (this.copyItems.length < 10)? this.copyItems.length:10;
       await setTimeout(() => {
         for (var i = 0; i < len; i++) {
-          let insert = this.copyItems[i]
+          let insert = this.copyItems.shift()
           if(insert){
             this.displayItems.push(insert);
           }
@@ -515,7 +515,7 @@ export default {
         }
         let len = this.copyItems.length < 20 ? this.copyItems.length : 20;
         for (var i = 0; i < len; i++) {
-          this.displayItems.push(this.copyItems[i]);
+          this.displayItems.push(this.copyItems.shift());
         }
       }
       this.searchInput = "";
@@ -545,7 +545,7 @@ export default {
       }
       let len = this.copyItems.length < 20 ? this.copyItems.length : 20;
       for (var i = 0; i < len; i++) {
-        this.displayItems.push(this.copyItems[i]);
+        this.displayItems.push(this.copyItems.shift());
       }
     },
 
