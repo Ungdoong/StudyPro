@@ -495,13 +495,8 @@ export default {
 
       let study_limit = study_info.data.user_limit;
       let num_joined_student = study_info.data.num_joined_student;
-      console.log('limit_check')
-      console.log(study_info)
-      console.log(study_limit)
-      console.log(num_joined_student)
 
-
-      if (num_joined_student >= study_limit) {
+      if (study_limit != 0 && (num_joined_student >= study_limit)) {
         alert("스터디 참여 인원이 초과하였습니다.");
         return;
       }else{
