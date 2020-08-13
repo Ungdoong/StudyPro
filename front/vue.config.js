@@ -5,6 +5,7 @@ module.exports = {
   ],
   devServer: {
     host: 't3coach16.p.ssafy.io',
+    https: true
     //https: true
     // https: {
     //   key: require('fs').readFileSync('./keys/private.key'),
