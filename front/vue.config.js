@@ -4,7 +4,8 @@ module.exports = {
     "vuetify"
   ],
   devServer: {
-    host: 't3coach16.p.ssafy.io',
+    host: process.env.VUE_APP_DOMAIN,
+    https: true
     //https: true
     // https: {
     //   key: require('fs').readFileSync('./keys/private.key'),

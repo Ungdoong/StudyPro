@@ -37,7 +37,7 @@ export default {
         authDomain: process.env.VUE_APP_FIREBASE_AUTH_DOMAIN,
         databaseURL: process.env.VUE_APP_FIREABASE_URL
       };
-      console.log(config);
+      // console.log(config);
 
       firebase.initializeApp(config);
 

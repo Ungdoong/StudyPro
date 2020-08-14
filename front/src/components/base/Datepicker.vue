@@ -63,7 +63,6 @@ export default {
   },
   watch: {
     menu(isOpen) {
-      console.log(this.menu)
       if (!isOpen) {
         this.closeMenu();
       } else {

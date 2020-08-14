@@ -106,7 +106,7 @@ export default {
   },
   methods: {
     studyEnter() {
-      console.log("Clicked...");
+      // console.log("Clicked...");
     },
     tabSwitch(target) {
       this.current = target;

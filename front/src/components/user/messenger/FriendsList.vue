@@ -59,7 +59,7 @@ export default {
     }
   },
   async created() {
-    console.log('FriendList created')
+    // console.log('FriendList created')
     const userInfo = await UserService.getAllUser();
     this.userItems = userInfo.data;
   },

@@ -41,7 +41,6 @@ class AuthService {
     }
 
     socialLogin(user) {
-        console.log('service')
         return axios
             .post(URL + 'social-signin', {
                 email: user.email,
@@ -53,7 +52,6 @@ class AuthService {
             .then(this.handleResponse)
             .then(
                 response => {
-                    console.log(response)
                     if (response.data.state === 'success') {
                         this.setToken(response.data.user)
                         AuthHeader.changeHeadersToken()

@@ -51,10 +51,8 @@ export const auth = {
 
         // 소셜 로그인
         async socialLogin({ commit }, user) {
-            console.log("module")
             let complete = await AuthService.socialLogin(user).then(
                 res => {
-                    console.log(res)
                     if (res) {
                         return res
                     } else {
@@ -99,10 +97,8 @@ export const auth = {
     },
     mutations: {
         loginSuccess(state, user) {
-            console.log("loginSuccess")
             state.status = { isLogged: true }
             state.user = user
-            console.log(state.status.isLogged)
         },
         loginFailure(state) {
             state.status = { isLogged: false }
