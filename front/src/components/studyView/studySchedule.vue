@@ -378,11 +378,6 @@ export default {
     draggable: () => import("vuedraggable"),
     modal: () => import("@/components/base/Modal")
   },
-  watch: {
-    issues() {
-      console.log(this.issues);
-    }
-  },
   computed: {
     title() {
       const { start, end } = this;
@@ -579,7 +574,7 @@ export default {
       this.reload();
     },
     async log(evt, title) {
-      console.log(evt, title)
+      // console.log(evt, title)
       if (evt.added) {
         this.added = title;
         if (this.removed != "") {

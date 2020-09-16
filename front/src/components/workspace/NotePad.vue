@@ -131,7 +131,7 @@ export default {
       document.getElementById("file_load").click();
     },
     load_editor() {
-      console.log("로딩완료");
+      // console.log("로딩완료");
       
       this.is_change = true;
     },
@@ -140,7 +140,7 @@ export default {
         return;
       }
       if (this.is_change) {
-        console.log("보낸다");
+        // console.log("보낸다");
         this.socket.emit("typing", {
           study_id: this.study_id,
           text: this.editorText
@@ -161,7 +161,7 @@ export default {
     };
 
     this.socket.on("typing", data => {
-      console.log("받아오나?");
+      // console.log("받아오나?");
 
       this.is_change = false;
       this.editorText = data.text;

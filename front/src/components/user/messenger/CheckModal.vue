@@ -109,7 +109,7 @@ export default {
         content: this.mainText
       };
 
-      console.log(msg);
+      // console.log(msg);
       AlarmService.sendAlarm(msg);
 
       // 통신 성공 실패 여부

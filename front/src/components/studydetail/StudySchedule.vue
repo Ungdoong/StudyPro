@@ -370,8 +370,6 @@ export default {
       this.start = start;
       this.end = end;
 
-      //   console.log(my_events);
-      //   console.log(events);
       //   this.events = events;
     },
 
@@ -409,7 +407,7 @@ export default {
     },
 
     clickDetailMenu(value, event) {
-      console.log("clickDetailMenu Method in MyCalendar.vue");
+      // console.log("clickDetailMenu Method in MyCalendar.vue");
 
       switch (value) {
         case "movemycal":
@@ -427,7 +425,7 @@ export default {
     },
 
     eventDelete(event) {
-      console.log("eventDelete in MyCalendar.vue", event);
+      // console.log("eventDelete in MyCalendar.vue", event);
 
       //삭제 엑시오스 요청
 
@@ -436,7 +434,7 @@ export default {
     },
 
     moveMyCal(event) {
-      console.log(event);
+      // console.log(event);
 
       // 엑시오스 요청
 

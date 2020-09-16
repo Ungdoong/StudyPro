@@ -60,6 +60,7 @@ export const auth = {
                     }
                 },
                 () => { // error
+                    console.log('module error')
                     return false
                 }
             )

@@ -3,7 +3,7 @@
     "username": "root",
     "password": "123456",
     "database": "samoim",
-    "host": "127.0.0.1",
+    "host": "t3coach14.p.ssafy.io",
     "dialect": "mysql",
     "operatorsAliases": false,
     "timezone": "+09:00",

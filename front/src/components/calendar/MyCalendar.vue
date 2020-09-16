@@ -301,7 +301,7 @@ export default {
     },
 
     clickDetailMenu(value, event) {
-      console.log("clickDetailMenu Method in MyCalendar.vue");
+      // console.log("clickDetailMenu Method in MyCalendar.vue");
 
       switch (value) {
         case "update":
@@ -317,7 +317,6 @@ export default {
 
     eventDelete(event) {
       WorkService.deleteWork({ type: "personal", work_id: event.id });
-      //console.log("eventDelete in MyCalendar.vue", event);
       const eventsIdx = this.events.indexOf(event);
       //삭제 엑시오스 요청
       this.events.splice(eventsIdx, 1);

@@ -255,7 +255,7 @@ export default {
     },
 
     async destroyStudy() {
-      console.log('des')
+      // console.log('des')
       let payload = {
         study_id: this.study_info.id,
         user_id: this.currentUser.uid

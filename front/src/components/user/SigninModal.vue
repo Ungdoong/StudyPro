@@ -162,6 +162,10 @@ export default {
           gender,
           profile_image,
           platform: "kakao"
+        }).then(()=>{
+          if(this.$store.getters["auth/isAuth"]){
+            this.close();
+          }
         });
         this.isLoading = false;
       } catch (err) {

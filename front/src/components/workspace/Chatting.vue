@@ -2,7 +2,7 @@
   <v-container>
     <v-card outlined class="pt-1 px-0">
       <v-card  height="286" class="chat overflow-y-auto mx-1 pa-2" outlined autofocus style="background-color: #e9e9e9">
-        <v-list class="ma-0 pa-0" ref="chat" outlined v-for="(data, index) in messages" :key="index" :align="'나' === data[0] ? `right` : data[0] ? `left` : 'center'" style="background-color: #e9e9e9">
+        <v-list class="ma-0 pa-0" ref="chat" v-for="(data, index) in messages" :key="index" :align="'나' === data[0] ? `right` : data[0] ? `left` : 'center'" style="background-color: #e9e9e9">
           <font style="display : block" size="2">{{ data[0] === '나' ? '' : data[0] }}</font>
             <font>
               <div v-for="(message,in_index) in data[1]" :key="`${index}-${in_index}`">
